@@ -1,0 +1,21 @@
+[_nghost-pmm-5]{
+    display: block;
+    border: 1px solid black;
+}
+h3[_ngcontent-pmm-6]{
+    background-color: white;
+    boder: 1px solid #777;
+}
+
+button.remove{
+    margin-left: 1 rem;
+    background: red;
+}
+
+input.file{
+    display: none;
+}
+
+.container{
+    margin: 20px;
+}

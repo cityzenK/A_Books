@@ -1,0 +1,11 @@
+[_nghost-listado]{
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.remove{
+    margin-left: 1 rem;
+    background: red;
+}
+

@@ -1,0 +1,11 @@
+<img 
+  *ngIf="!list"
+  src="https://media.tenor.com/wpSo-8CrXqUAAAAi/loading-loading-forever.gi" alt="Loading">
+
+<div *ngIf="list?.length === 0">
+    There are no data to show.
+</div>
+
+  <ng-container *ngIf="list && list.length > 0">
+      <ng-content select="[contenido]"></ng-content>
+  </ng-container>

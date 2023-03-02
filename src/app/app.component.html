@@ -1,0 +1,42 @@
+<app-menu></app-menu>
+
+<!--<div class="container">
+    
+    <div>
+        The double of 3 is {{duplicateNumber(3)}}
+        <span></span>
+    </div>
+    <div>
+        {{price | currency:'Q.'}}
+    </div>
+    <div>
+        {{concatSign(14.50)}}
+    </div>
+
+    <div _nghost-pmm-5>
+        <h2 _ngcontent-pmm-5>Mister Fantastic</h2>
+        <div _ngcontent-pmm-5 nghost-pmm-6>
+            <h3 _ngcontent-pmm-6>Team</h3>
+        </div>
+        <h2 _ngcontent-pmm-5>Mister Fantastic</h2>
+        <div _ngcontent-pmm-5 nghost-pmm-6>
+            <h3 _ngcontent-pmm-6>Team 2</h3>
+        </div>
+    </div>
+
+    <div>
+        {{count}}
+        <button (click)="counter()" class="remove">Aumetar</button>
+    </div>
+
+    <input type="file"  class="file" #uploader>
+    <button (click)="uploader.click()">Archivo</button>
+
+</div>-->
+
+<div class="container">
+    <h2>Libros Publicados</h2>
+    <app-book-list [listado] = "booksPublisheds"></app-book-list>
+    <h2>Colecciones Disponibles</h2>
+    <app-book-list [listado]="collectionAvaiable"></app-book-list>
+</div>
