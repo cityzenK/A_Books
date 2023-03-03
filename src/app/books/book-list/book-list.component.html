@@ -1,11 +1,25 @@
 <app-generic-list [list]="listado">
     <ng-container contenido>
-            <div *ngFor="let lista of listado; let index = index">
-                <div _nghost-listado>
-                    {{index}} ) {{lista.name}}
-                    <button (click)="remove(index)" class="remove">Remove</button>
-                </div> 
+        <div class="books-container">
+            <div *ngFor="let lista of listado; let index = index" class="book-container">
+                <a>
+                    <img [src]="lista.cover" alt="cover" />
+                </a>
+                <p>
+                    <a>
+                        {{lista.name}}
+                    </a>
+                </p>
+                <div>
+                    <a mat-flat-button color= "primary">
+                        Edit
+                    </a>
+                    <button mat-flat-button color="warn" type="button">
+                        Delete
+                    </button>
+                </div>
             </div>
+        </div>
     </ng-container>
 </app-generic-list>
  

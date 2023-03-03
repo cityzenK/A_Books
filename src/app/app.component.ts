@@ -1,36 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
-    constructor(){
-
-    }
-
-    ngOnInit(): void {
-        this.booksPublisheds = [
-            {
-                name: "La sombra del Viente"
-            },
-            {
-                name: "El principe de la Niebla"
-            }
-        ]
-        this.collectionAvaiable = [
-            {
-                name: "Ciencia Ficcion"
-            },
-            {
-                name: "Thiller"
-            }
-        ]
-    }
-
-    booksPublisheds = [];
-    collectionAvaiable = [];
+export class AppComponent {
 
     title = 'angular-books';
     price = 14.50;
