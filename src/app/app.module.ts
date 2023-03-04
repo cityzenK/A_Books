@@ -27,7 +27,7 @@ import { CreateGenerComponent } from './geners/create-gener/create-gener.compone
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

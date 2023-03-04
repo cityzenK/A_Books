@@ -7,9 +7,14 @@
             Angular Books
         </a>
     </span>
-    <div>
-        <a mat-button routerLink="geners">
+    <ng-container>
+        <a mat-button [matMenuTriggerFor]="Geners">
             Geners
         </a>
-    </div>
+            <mat-menu #Geners="matMenu">
+                <button *ngFor="let gener of geners" mat-menu-item >
+                    {{gener}}
+                </button>
+            </mat-menu>
+    </ng-container>
 </mat-toolbar>
