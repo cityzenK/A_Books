@@ -1,0 +1,15 @@
+.detailsContainer{
+    display: flex;
+    flex-direction: row;
+    aling-items: center;
+    margin-top: 10%;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.detailBook{
+    padding: 1rem;
+}
+img{
+    height: 363.633px;
+    widht: 240px;
+}
