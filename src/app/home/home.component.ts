@@ -10,7 +10,7 @@ export class HomeComponent implements OnInit{
         ngOnInit(): void {
             this.booksPublished = [
                 {
-                    name: "La sombra del Viente",
+                    name: "La sombra del Viento",
                     cover: "https://4.bp.blogspot.com/-c1ZZQK3r35g/Vzv_Qd91GJI/AAAAAAAAM_k/unbEDCELHboaH2nljwgK25AjuANq-KN1gCLcB/s1600/LA%2BSOMBRA%2BDEL%2BVIENTO.jpg"
                 },
                 {

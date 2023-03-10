@@ -12,5 +12,5 @@ export class MenuComponent implements OnInit {
     }
 
     @Input()
-    geners = [];
+    geners: string[];
 }

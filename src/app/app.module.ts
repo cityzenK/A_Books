@@ -12,6 +12,7 @@ import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
 import { IndexGenersComponent } from './geners//index-geners/index-geners.component';
 import { CreateGenerComponent } from './geners/create-gener/create-gener.component';
+import { BookDetailComponent } from './books/book-detail/book-detail.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CreateGenerComponent } from './geners/create-gener/create-gener.compone
     MenuComponent,
     HomeComponent,
     IndexGenersComponent,
-    CreateGenerComponent
+    CreateGenerComponent,
+    BookDetailComponent
   ],
   imports: [
     BrowserModule,

@@ -6,18 +6,20 @@
                     <img [src]="lista.cover" alt="cover" />
                 </a>
                 <p>
-                    <a>
+                    <a [routerLink]="['books', index]">
                         {{lista.name}}
                     </a>
                 </p>
-                <div>
+                <!--
+                    <div>
                     <a mat-flat-button color= "primary">
-                        Edit
+                    Edit
                     </a>
                     <button mat-flat-button color="warn" type="button">
-                        Delete
+                    Delete
                     </button>
-                </div>
+                    </div>
+                -->
             </div>
         </div>
     </ng-container>
