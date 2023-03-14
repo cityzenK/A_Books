@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import {generDTO} from '../geners/geners.model';
+import {GenersService} from '../geners/geners.service';
 
 @Component({
   selector: 'app-menu',
@@ -7,10 +9,22 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-    ngOnInit(): void {
-        this.geners = ['Thiller', 'Drama', 'Comedy', 'Sci-Fy', 'Documental']
+
+    genres: generDTO[];
+
+    /**
+     *
+     */
+    constructor(private genersService: GenersService) {
+        
     }
 
-    @Input()
-    geners: string[];
+    ngOnInit(): void {
+
+        this.genersService.getAll().subscribe(geners =>{
+            this.genres = geners;
+        })
+
+    }
+
 }
