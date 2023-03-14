@@ -1,9 +1,9 @@
 export interface genercreationDTO{
-    name: string;
+    gener: string;
 }
 
 export interface generDTO{
-    id: number;
-    name: string;
+    generID: number;
+    gener: string;
 
 }
