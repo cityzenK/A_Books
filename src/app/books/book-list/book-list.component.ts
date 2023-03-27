@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-book-list',
@@ -6,10 +6,15 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./book-list.component.css']
 })
 
-export class BookListComponent {
+export class BookListComponent  implements OnInit{
 
     @Input()
     listado = [];
+
+    ngOnInit(): void {
+        console.log(this.listado);
+    }
+
 
     regresiSum(n: number): number{
         let sum: number = 0;
@@ -41,4 +46,5 @@ export class BookListComponent {
     remove(index: number){
         this.listado.splice(index, 1);
     }
+
 }

@@ -2,24 +2,27 @@
     <ng-container contenido>
         <div class="books-container">
             <div *ngFor="let lista of listado; let index = index" class="book-container">
-                <a>
-                    <img [src]="lista.cover" alt="cover" />
-                </a>
-                <p>
-                    <a [routerLink]="['books', index]">
-                        {{lista.name}}
+                <div class="item-book" [routerLink]="['books', index]">
+                    
+                    <a>
+                        <img [src]="lista.cover" alt="cover" />
                     </a>
-                </p>
-                <!--
-                    <div>
-                    <a mat-flat-button color= "primary">
-                    Edit
+                    <p>
+                    <a>
+                        {{lista.title}}
                     </a>
-                    <button mat-flat-button color="warn" type="button">
-                    Delete
-                    </button>
-                    </div>
-                -->
+                    </p>
+                    <!--
+                        <div>
+                        <a mat-flat-button color= "primary">
+                        Edit
+                        </a>
+                        <button mat-flat-button color="warn" type="button">
+                        Delete
+                        </button>
+                        </div>
+                    -->
+                </div>
             </div>
         </div>
     </ng-container>

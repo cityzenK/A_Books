@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {generDTO} from '../geners/geners.model';
 import {GenersService} from '../geners/geners.service';
 
@@ -25,6 +25,7 @@ export class MenuComponent implements OnInit {
             this.genres = geners;
         })
 
-    }
+        console.log(this.genres);
 
+    }
 }
