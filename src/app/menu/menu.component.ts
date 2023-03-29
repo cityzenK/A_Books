@@ -24,8 +24,6 @@ export class MenuComponent implements OnInit {
         this.genersService.getAll().subscribe(geners =>{
             this.genres = geners;
         })
-
-        console.log(this.genres);
-
     }
+
 }

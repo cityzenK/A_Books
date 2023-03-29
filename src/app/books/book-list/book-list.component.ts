@@ -12,7 +12,6 @@ export class BookListComponent  implements OnInit{
     listado = [];
 
     ngOnInit(): void {
-        console.log(this.listado);
     }
 
 
@@ -46,5 +45,4 @@ export class BookListComponent  implements OnInit{
     remove(index: number){
         this.listado.splice(index, 1);
     }
-
 }

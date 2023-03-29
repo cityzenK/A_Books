@@ -14,10 +14,12 @@ export class HomeComponent implements OnInit{
     }
 
         ngOnInit(): void {
-            this.booksService.getHomePageBooks().subscribe(BooksHome => {
-                this.booksPublished = BooksHome.BooksHome;
+            this.booksService.getHomePageBooks().subscribe(
+                booksHome => {
+                    const data = Object.entries(booksHome);
+                    this.booksPublished = data[0][1];
+                    console.log(this.booksPublished);
             })
-            console.log(this.booksPublished);
         }
 
 
