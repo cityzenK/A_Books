@@ -1,11 +1,15 @@
-<div class="detailsContainer">
+<div *ngIf="bookDetail" class="detailsContainer">
     <div class="coverBook">
         <img [src]="getCover()" alt="">
     </div>
     <div class="detailBook">
         <h2>{{getName()}}</h2>
+        <section>
+            <h3 for="author">Author</h3><h3 id="author">{{getAuthor()}}</h3>
+        </section>
         <p class="resumeText">
             {{getResume()}}
         </p>
     </div>
 </div>
+

@@ -9,6 +9,10 @@
 .detailBook{
     padding: 1rem;
 }
+.resumeText{
+    text-align: justify;
+    text-justify: inter-word;
+}
 img{
     height: 363.633px;
     widht: 240px;

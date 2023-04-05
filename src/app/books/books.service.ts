@@ -17,4 +17,9 @@ export class BooksService {
       return this.http.get<BooksHome>(this.apiURL);
   }
 
+
+  public getBookDetail(id: number): Observable<BooksDTO> {
+      return this.http.get<BooksDTO>(`${this.apiURL}/${id}`);
+  }
+
 }

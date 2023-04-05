@@ -2,7 +2,7 @@
     <ng-container contenido>
         <div class="books-container">
             <div *ngFor="let lista of listado; let index = index" class="book-container">
-                <div class="item-book" [routerLink]="['books', index]">
+                <div class="item-book" [routerLink]="['books', lista.bookID]">
                     
                     <a>
                         <img [src]="lista.cover" alt="cover" />

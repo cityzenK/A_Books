@@ -1,13 +1,14 @@
 import { generDTO } from "../geners/geners.model";
 import { AuthorDTO } from "./author.model";
-import { CollectionDTO } from "./collection.model";
+import { sagaDTO } from "./saga.model";
 import { EditorialDTO } from "./editorial.model";
 
 export interface BooksDTO {
+    bookID: number;
     title: string;
     author: AuthorDTO;
-    Resume: string;
-    collection: CollectionDTO;
+    resume: string;
+    saga: sagaDTO;
     cover: string;
     editorial: EditorialDTO;
     geners: generDTO[];
