@@ -5,4 +5,31 @@ mat-toolbar{
     z-index: 1000;
 }
 
+.cb-flex{
+    display: flex;
+    flex-wrap: wrap;
+    widht: 380px;
+}
 
+.cb-flex .mat-mdc-menu-item{
+    width: 120px;
+    white-space: pre;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mat-mdc-menu-item{
+    table-layout: fixed;
+}
+
+.mat-mdc-menu-item{
+    width: 120px;
+    white-space: pre;
+    overflow: hidden;
+    --text-overflow: ellipsis;
+}
+
+.mat-mdc-menu-item{
+    widht: 80px;
+    text-align: right;
+}
