@@ -14,10 +14,12 @@
                 <button mat-button  [matMenuTriggerFor]="Geners">
                     Geners
                 </button>
-                <mat-menu #Geners="matMenu" class="cb-flex"  yPosition="below">
-                    <button *ngFor="let gener of genres" mat-menu-item class="Menu-item">
-                        {{gener.gener}}
-                    </button>
+                <mat-menu #Geners="matMenu"   yPosition="below">
+                    <div class="table">
+                        <button *ngFor="let gener of genres" mat-menu-item class="Menu-item">
+                            {{gener.gener}}
+                        </button>
+                    </div>
                 </mat-menu>
             </ng-container>
         </app-generic-list>

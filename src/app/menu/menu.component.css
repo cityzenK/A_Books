@@ -11,25 +11,28 @@ mat-toolbar{
     widht: 380px;
 }
 
-.cb-flex .mat-mdc-menu-item{
+.table{
+    columns: 2;
+    list-style: none;
+}
+
+.cb-flex .Menu-item{
     width: 120px;
     white-space: pre;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.mat-mdc-menu-item{
+.Menu-item{
     table-layout: fixed;
 }
 
-.mat-mdc-menu-item{
+.Menu-item{
+    padding: 1rem;
     width: 120px;
     white-space: pre;
     overflow: hidden;
-    --text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    text-align: left;
 }
 
-.mat-mdc-menu-item{
-    widht: 80px;
-    text-align: right;
-}
