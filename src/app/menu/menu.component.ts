@@ -22,7 +22,7 @@ export class MenuComponent implements OnInit {
     ngOnInit(): void {
 
         this.genersService.getAll().subscribe(geners =>{
-            this.genres = geners;
+            this.genres = geners.sort((a,b) => a.gener.localeCompare(b.gener));
         })
     }
 
