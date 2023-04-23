@@ -20,10 +20,18 @@ export class HomeComponent implements OnInit{
                     this.booksPublished = data[0][1];
                     console.log(this.booksPublished);
             })
+
+            this.display();
         }
 
 
     booksPublished = [];
     collectionsAvaiable = [];
+
+
+    display(){
+        console.log("Outside the OnInit");
+        console.log(this.booksPublished);
+    }
 }
 
