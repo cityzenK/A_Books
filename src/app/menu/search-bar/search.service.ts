@@ -14,9 +14,18 @@ export class SearchService {
 
   constructor(private http: HttpClient) { }
   private apiURL = environment.apiURL + '/books/search';
+  private apiURLSearch = environment.apiURL + '/books/filter'; 
 
-  public getSearch(): Observable<SearchDTO[]>{
-      return this.http.get<SearchDTO[]>(this.apiURL);
+  public getSearch(): Observable<searchList>{
+      return this.http.get<searchList>(this.apiURL);
   }
 
+  searchBook({title}: bookTracker ): Observable <any>{
+      return this.http.get<searchList>(`${this.apiURLSearch}?title=${title}`);
+  }
+
+}
+
+export class bookTracker{
+    title: string;
 }

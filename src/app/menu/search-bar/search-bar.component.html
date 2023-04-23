@@ -3,14 +3,22 @@
 -->
 <form [formGroup]="searchForm">
     <mat-form-field>
-        <input matInput type="text" placeholder="search"  
-        formControlName="searchBar" aria-laber="State" [matAutocomplete]="auto">
+        <input matInput 
+        type="text" 
+        placeholder="search"  
+        [spellcheck]="false"
+        formControlName="searchBar" 
+        aria-laber="State" 
+        [matAutocomplete]="auto"
+        (input)="search(searchText)" 
+        [(ngModel)]="searchText">
         <mat-autocomplete #auto="matAutocomplete" [displayWith]="">
             <mat-option *ngIf="" class="is-loading">
                 Loading...
             </mat-option>
             <ng-container>
-                <mat-option *ngFor="let option of searchBook" [value]="option.title">
+                <mat-option 
+                *ngFor="let option of data$ | async">
                     <span>{{option.title}}</span>
                 </mat-option>
             </ng-container>
