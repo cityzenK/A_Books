@@ -11,7 +11,7 @@ export interface BooksDTO {
     saga: sagaDTO;
     cover: string;
     editorial: EditorialDTO;
-    geners: generDTO[];
+    genersBook: generDTO[];
 }
 
 export interface BooksHome{

@@ -1,14 +1,38 @@
 <div *ngIf="bookDetail" class="detailsContainer">
-    <div class="coverBook">
-        <img [src]="getCover()" alt="">
-    </div>
     <div class="detailBook">
-        <h2>{{getName()}}</h2>
-        <section>
-            <h3 for="author">Author</h3><h3 id="author">{{getAuthor()}}</h3>
-        </section>
+        <div class="coverBook">
+            <img [src]="getCover()" alt="">
+        </div>
+        <div class="Info-detail">
+            <h2>{{getName()}}</h2>
+            <section>
+                <h3 for="author">Author</h3>
+                <label id="author">{{bookDetail.author.author}}</label>
+            </section>
+            <section>
+                <h3 for="saga">Collección</h3>
+                <label id="saga">{{bookDetail.saga.saga}}</label>
+            </section>
+            <section>
+                <h3 for="editorial">Editorial</h3>
+                <label id="editorial">{{bookDetail.editorial.editorial}}</label>
+            </section>
+            <h3 for="geners">Generos</h3>
+            <mat-chip-listbox>
+                <!--
+                -->
+                <mat-chip *ngFor="let gen of bookDetail.genersBook">
+                    {{gen.gener}}
+                </mat-chip>
+            </mat-chip-listbox>
+            <section>
+            </section>
+        </div>
+    </div>
+    <div class="Info-resume">
+        <strong>SIPNOSIS</strong>
         <p class="resumeText">
-            {{getResume()}}
+        {{bookDetail.resume}}
         </p>
     </div>
 </div>

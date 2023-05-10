@@ -17,10 +17,12 @@ export class BookDetailComponent implements OnInit {
     ngOnInit(): void {
         this.activatedRoute.params.subscribe(params =>{
             this.bookService.getBookDetail(params['id']).subscribe(
-                bookDetails =>{
-                    this.bookDetail = bookDetails;
+                Details =>{
+                    console.log(Details);
+                    this.bookDetail = Details;
+                    console.log(this.bookDetail.genersBook);
                 }
-            )
+            );
         });
 
         //Harcore truncade data
@@ -43,5 +45,4 @@ export class BookDetailComponent implements OnInit {
     getAuthor(): string{
         return this.bookDetail.author.author;
     }
-
 }
