@@ -17,6 +17,7 @@ import { CreateGenerComponent } from './geners/create-gener/create-gener.compone
 import { BookDetailComponent } from './books/book-detail/book-detail.component';
 import { SearchBarComponent } from './menu/search-bar/search-bar.component';
 import {FilterPipe} from './menu/search-bar/FilterPipe';
+import { AuthorizeViewComponent } from './security/authorize-view/authorize-view.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import {FilterPipe} from './menu/search-bar/FilterPipe';
     CreateGenerComponent,
     BookDetailComponent,
     SearchBarComponent,
-    FilterPipe
+    FilterPipe,
+    AuthorizeViewComponent
   ],
   imports: [
     BrowserModule,
